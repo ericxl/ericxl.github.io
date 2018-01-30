@@ -1,12 +1,44 @@
+<!-- CSS Stylesheets with Relative Paths -->
+
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 
 <head>
-    <title>ERICXL</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <meta charset="UTF-8">
+  <title>CSS Stylesheets with Relative Paths</title>
 
-    <h1>Eric</h1>
+  <!-- This line is money! It points your HTML to the CSS file. -->
+  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+
+<body>
+  <header>
+    <h1>Eric Liang</h1>
+  </header>
+
+  <div class="container">
+
+    <section id="main-bio">
+
+      <h2>Eric</h2>
+
+      <img id="bio-image" src="https://placehold.it/200x200" alt="Eric">
+
+      <p>Write a short paragraph or two about yourself, or use placeholder text from <a href="http://www.lipsum.com/">www.lipsum.com</a></p>
+    </section>
+
+    <section id="contact-info">
+      <h2>Contact Info</h2>
+      <ul>
+        <li><strong>Email:</strong> <a href="#">ericliang@utexas.edu</a></li>
+        <li><strong>Github:</strong> <a href="https://github.com/ericxl" target="_blank">ericxl</a></li>
+        <li><strong>Portfolio:</strong> <a href="#">coming soon</a></li>
+      </ul>
+    </section>
+  </div>
+
 </body>
+
 </html>

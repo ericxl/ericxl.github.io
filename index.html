@@ -198,6 +198,33 @@
       fill: currentColor;
     }
 
+    .papers li {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 8px 12px;
+    }
+
+    .paper-title {
+      color: var(--foreground);
+      text-decoration: none;
+    }
+
+    .paper-title:hover {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+      text-decoration-thickness: 1px;
+    }
+
+    .paper-source {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--muted-foreground);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+    }
+
     .profile-pic {
       width: 96px;
       height: 96px;
@@ -253,8 +280,15 @@
 
     <section id="research">
       <h2>Research &amp; Papers</h2>
-      <ul>
-        <li>Paper title — venue, year. <a href="#">link</a></li>
+      <ul class="papers">
+        <li>
+          <a class="paper-title" href="https://ericxl.github.io/foveated-screen-perception/">Foveated Screen Perception: Bio-Inspired Top-Down Observation Control for Computer-Use Agents</a>
+          <span class="paper-source">Preprint</span>
+        </li>
+        <li>
+          <a class="paper-title" href="https://ieeexplore.ieee.org/document/8406270/">Vertex-centric distributed computation for mapping virtual networks across domains</a>
+          <span class="paper-source">IEEE/IFIP NOMS</span>
+        </li>
       </ul>
     </section>
 

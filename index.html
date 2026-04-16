@@ -6,7 +6,7 @@
   <title>Xiaoyong (Eric) Liang</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <style>
     @font-face {
       font-family: "Signifier";
@@ -264,7 +264,14 @@
 
     .cv-role { color: var(--foreground); }
 
-    .cv-role .cv-company { color: var(--muted-foreground); }
+    .cv-company {
+      display: block;
+      font-family: var(--font-sans);
+      font-size: 14px;
+      font-weight: 500;
+      color: #333;
+      margin-top: 2px;
+    }
 
     .cv-date {
       font-family: var(--font-mono);
@@ -289,11 +296,11 @@
       display: inline-block;
       font-family: var(--font-mono);
       font-size: 9px;
-      font-weight: 500;
+      font-weight: 400;
       letter-spacing: 0.08em;
       text-transform: uppercase;
       color: var(--muted-foreground);
-      border: 1px solid rgba(64, 62, 55, 0.3);
+      border: 1px solid rgba(64, 62, 55, 0.2);
       padding: 1px 5px;
       margin-left: 6px;
       vertical-align: 2px;
@@ -374,9 +381,10 @@
           <img class="cv-logo" src="logos/anthropic.png" alt="" />
           <div class="cv-body">
             <div class="cv-head">
-              <span class="cv-role">Member of Technical Staff, <span class="cv-company">Anthropic</span><span class="cv-type">Contract</span></span>
+              <span class="cv-role">Member of Technical Staff</span>
               <span class="cv-date">2025 – Present</span>
             </div>
+            <div class="cv-company">Anthropic<span class="cv-type">Contract</span></div>
             <p class="cv-desc">RL environments post training.</p>
           </div>
         </li>
@@ -384,18 +392,20 @@
           <img class="cv-logo" src="logos/human-data-company.png" alt="" />
           <div class="cv-body">
             <div class="cv-head">
-              <span class="cv-role">Cofounder &amp; CEO, <span class="cv-company">The Human Data Company</span></span>
+              <span class="cv-role">Cofounder &amp; CEO</span>
               <span class="cv-date">2025 – Present</span>
             </div>
+            <div class="cv-company">The Human Data Company</div>
           </div>
         </li>
         <li>
           <img class="cv-logo" src="logos/aesop-labs.png" alt="" />
           <div class="cv-body">
             <div class="cv-head">
-              <span class="cv-role">Cofounder &amp; CEO, <span class="cv-company">Aesop Labs</span></span>
+              <span class="cv-role">Cofounder &amp; CEO</span>
               <span class="cv-date">2024 – Present</span>
             </div>
+            <div class="cv-company">Aesop Labs</div>
             <p class="cv-desc">
               HoverGPT — “Cursor for everything”: <a href="https://www.hovergpt.ai">hovergpt.ai</a>.<br />
               YouToon — Vibe code for mobile games; the largest world simulation platform with photorealistic avatars.
@@ -406,9 +416,10 @@
           <img class="cv-logo" src="logos/revui.png" alt="" />
           <div class="cv-body">
             <div class="cv-head">
-              <span class="cv-role">Cofounder &amp; CEO, <span class="cv-company">Revui AI (stealth)</span></span>
+              <span class="cv-role">Cofounder &amp; CEO</span>
               <span class="cv-date">2023 – 2024</span>
             </div>
+            <div class="cv-company">Revui AI (stealth)</div>
             <p class="cv-desc">Visual understanding as a service — assisting disabled players and automation — for games.</p>
           </div>
         </li>
@@ -416,9 +427,10 @@
           <img class="cv-logo" src="logos/apple.png" alt="" />
           <div class="cv-body">
             <div class="cv-head">
-              <span class="cv-role">Tech Lead, Spatial Understanding, <span class="cv-company">Apple</span></span>
+              <span class="cv-role">Tech Lead, Spatial Understanding</span>
               <span class="cv-date">2018 – 2023</span>
             </div>
+            <div class="cv-company">Apple</div>
             <p class="cv-desc">
               0→1 and DRI of spatial understanding on Apple Vision Pro (proto-stage / early development) — helping blind users, automation frameworks, etc.<br />
               0→1 of spatial understanding in Apple's developer tool for 3D worlds.
@@ -429,9 +441,10 @@
           <img class="cv-logo" src="logos/fujitsu.png" alt="" />
           <div class="cv-body">
             <div class="cv-head">
-              <span class="cv-role">Research Engineer Intern, 5G Edge, <span class="cv-company">Fujitsu Network Communications</span></span>
+              <span class="cv-role">Research Engineer Intern, 5G Edge</span>
               <span class="cv-date">2017</span>
             </div>
+            <div class="cv-company">Fujitsu Network Communications</div>
             <p class="cv-desc">5G edge transport network control and management; traffic prediction; traffic routing.</p>
           </div>
         </li>
@@ -439,9 +452,10 @@
           <img class="cv-logo" src="logos/playfab.png" alt="" />
           <div class="cv-body">
             <div class="cv-head">
-              <span class="cv-role">Software Engineer Intern, <span class="cv-company">Azure PlayFab</span></span>
+              <span class="cv-role">Software Engineer Intern</span>
               <span class="cv-date">2016</span>
             </div>
+            <div class="cv-company">Azure PlayFab</div>
             <p class="cv-desc">Wrote realtime collaboration SDK for Unity.</p>
           </div>
         </li>

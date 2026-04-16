@@ -225,6 +225,52 @@
       white-space: nowrap;
     }
 
+    .cv {
+      padding-left: 0;
+      list-style: none;
+      font-family: var(--font-sans);
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    .cv li {
+      padding: 16px 0;
+      border-bottom: 1px solid rgba(64, 62, 55, 0.15);
+    }
+
+    .cv li:last-child { border-bottom: none; }
+
+    .cv-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 4px 16px;
+    }
+
+    .cv-role { color: var(--foreground); }
+
+    .cv-role .cv-company { color: var(--muted-foreground); }
+
+    .cv-date {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--muted-foreground);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+    }
+
+    .cv-desc {
+      font-family: var(--font-sans);
+      font-size: 15px;
+      line-height: 1.55;
+      color: var(--muted-foreground);
+      margin: 6px 0 0;
+    }
+
+    .cv-desc a { color: inherit; }
+
     .profile-pic {
       width: 96px;
       height: 96px;
@@ -288,6 +334,66 @@
         <li>
           <a class="paper-title" href="https://ieeexplore.ieee.org/document/8406270/">Vertex-centric distributed computation for mapping virtual networks across domains</a>
           <span class="paper-source">IEEE/IFIP NOMS</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="vitae">
+      <h2>Vitæ</h2>
+      <ul class="cv">
+        <li>
+          <div class="cv-head">
+            <span class="cv-role">Member of Technical Staff, <span class="cv-company">Anthropic</span></span>
+            <span class="cv-date">2025 – Present</span>
+          </div>
+          <p class="cv-desc">RL environments post training.</p>
+        </li>
+        <li>
+          <div class="cv-head">
+            <span class="cv-role">Cofounder &amp; CEO, <span class="cv-company">The Human Data Company</span></span>
+            <span class="cv-date">2025 – Present</span>
+          </div>
+        </li>
+        <li>
+          <div class="cv-head">
+            <span class="cv-role">Cofounder &amp; CEO, <span class="cv-company">Aesop Labs</span></span>
+            <span class="cv-date">2024 – Present</span>
+          </div>
+          <p class="cv-desc">
+            HoverGPT — “Cursor for everything”: <a href="https://www.hovergpt.ai">hovergpt.ai</a>.<br />
+            YouToon — Vibe code for mobile games; the largest world simulation platform with photorealistic avatars.
+          </p>
+        </li>
+        <li>
+          <div class="cv-head">
+            <span class="cv-role">Cofounder &amp; CEO, <span class="cv-company">Revui AI (stealth)</span></span>
+            <span class="cv-date">2023 – 2024</span>
+          </div>
+          <p class="cv-desc">Visual understanding as a service — assisting disabled players and automation — for games.</p>
+        </li>
+        <li>
+          <div class="cv-head">
+            <span class="cv-role">Tech Lead, Spatial Understanding, <span class="cv-company">Apple</span></span>
+            <span class="cv-date">2018 – 2023</span>
+          </div>
+          <p class="cv-desc">
+            0→1 and DRI of spatial understanding on Apple Vision Pro (proto-stage / early development) — helping blind users, automation frameworks, etc.<br />
+            0→1 of spatial understanding in Apple's developer tool for 3D worlds.
+          </p>
+        </li>
+        <li>
+          <div class="cv-head">
+            <span class="cv-role">Research Engineer Intern, 5G Edge, <span class="cv-company">Fujitsu Network Communications</span></span>
+            <span class="cv-date">2017</span>
+          </div>
+          <p class="cv-desc">5G edge transport network control and management; traffic prediction; traffic routing.</p>
+        </li>
+        <li>
+          <div class="cv-head">
+            <span class="cv-role">Software Engineer Intern, <span class="cv-company">Azure PlayFab</span></span>
+            <span class="cv-date">2016</span>
+          </div>
+          <p class="cv-desc">Wrote realtime collaboration SDK for Unity.</p>
         </li>
       </ul>
     </section>
